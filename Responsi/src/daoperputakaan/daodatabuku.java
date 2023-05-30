@@ -40,8 +40,8 @@ public class daodatabuku implements daoimplement{
             st.setString(2, p.getGenre());
             st.setString(3, p.getPenulis());
             st.setString(4, p.getPenerbit());
-            st.setString(6, p.getLokasi());
-            st.setInt(7, p.getStock());
+            st.setString(5, p.getLokasi());
+            st.setInt(6, p.getStock());
             st.executeUpdate();
             ResultSet rs = st.getGeneratedKeys();
             while (rs.next()) {
@@ -73,9 +73,9 @@ public class daodatabuku implements daoimplement{
             st.setString(2, p.getGenre());
             st.setString(3, p.getPenulis());
             st.setString(4, p.getPenerbit());
-            st.setString(6, p.getLokasi());
-            st.setInt(7, p.getStock());
-            st.setInt(8, p.getId());
+            st.setString(5, p.getLokasi());
+            st.setInt(6, p.getStock());
+            st.setInt(7, p.getId());
             st.executeUpdate();
         
         } catch (Exception e) {
@@ -122,9 +122,9 @@ public class daodatabuku implements daoimplement{
             st.setString(2, p.getGenre());
             st.setString(3, p.getPenulis());
             st.setString(4, p.getPenerbit());
-            st.setString(6, p.getLokasi());
-            st.setInt(7, p.getStock());
-            st.setInt(8, p.getId());
+            st.setString(5, p.getLokasi());
+            st.setInt(6, p.getStock());
+            st.setInt(7, p.getId());
             st.executeUpdate();
         
         } catch (Exception e) {
